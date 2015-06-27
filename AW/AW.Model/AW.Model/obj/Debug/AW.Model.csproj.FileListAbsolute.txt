@@ -1,0 +1,4 @@
+G:\Bell Info Training\Class Project\AW.Model\AW.Model\bin\Debug\AW.Model.dll
+G:\Bell Info Training\Class Project\AW.Model\AW.Model\bin\Debug\AW.Model.pdb
+G:\Bell Info Training\Class Project\AW.Model\AW.Model\obj\Debug\AW.Model.dll
+G:\Bell Info Training\Class Project\AW.Model\AW.Model\obj\Debug\AW.Model.pdb
