@@ -9,3 +9,4 @@ G:\Bell Info Training\Class Project\AW.Model\AW.Portal\bin\AW.DataAccessLayer.pd
 G:\Bell Info Training\Class Project\AW.Model\AW.Portal\bin\AW.Model.pdb
 G:\Bell Info Training\Class Project\AW.Model\AW.Portal\obj\Debug\AW.Portal.dll
 G:\Bell Info Training\Class Project\AW.Model\AW.Portal\obj\Debug\AW.Portal.pdb
+C:\Users\rakesh\biproject\BISummer2015-P1-T2\AW\AW.Model\AW.Portal\obj\Debug\AW.Portal.csprojResolveAssemblyReference.cache

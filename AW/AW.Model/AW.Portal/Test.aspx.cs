@@ -21,5 +21,11 @@ namespace AW.Portal
             GridView1.DataSource = product;
             GridView1.DataBind();
         }
+        protected void btnShowPopup_Click(object sender, EventArgs e)
+        {
+            string message = "Message from server side";
+            ClientScript.RegisterStartupScript(this.GetType(), "Popup", "ShowPopup('" + message + "');", true);
+        }
     }
+
 }

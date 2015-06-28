@@ -59,6 +59,10 @@ namespace AW.BusinessAccessLayer
             {
                 selQry = "SELECT *  FROM [SalesLT].[vProductListing]";
             }
+            else if (_typeName == "ProductModel")
+            {
+                selQry = "SELECT *  FROM [SalesLT].[ProductModel]";
+            }
             return selQry;
         }
 

@@ -7,3 +7,12 @@ G:\Bell Info Training\Class Project\AW.Model\AW.BusinessAccessLayer\bin\Debug\AW
 G:\Bell Info Training\Class Project\AW.Model\AW.BusinessAccessLayer\bin\Debug\AW.Model.pdb
 G:\Bell Info Training\Class Project\AW.Model\AW.BusinessAccessLayer\obj\Debug\AW.BusinessAccessLayer.dll
 G:\Bell Info Training\Class Project\AW.Model\AW.BusinessAccessLayer\obj\Debug\AW.BusinessAccessLayer.pdb
+C:\Users\rakesh\biproject\BISummer2015-P1-T2\AW\AW.Model\AW.BusinessAccessLayer\bin\Debug\AW.BusinessAccessLayer.dll
+C:\Users\rakesh\biproject\BISummer2015-P1-T2\AW\AW.Model\AW.BusinessAccessLayer\bin\Debug\AW.BusinessAccessLayer.pdb
+C:\Users\rakesh\biproject\BISummer2015-P1-T2\AW\AW.Model\AW.BusinessAccessLayer\bin\Debug\AW.DataAccessLayer.dll
+C:\Users\rakesh\biproject\BISummer2015-P1-T2\AW\AW.Model\AW.BusinessAccessLayer\bin\Debug\AW.Model.dll
+C:\Users\rakesh\biproject\BISummer2015-P1-T2\AW\AW.Model\AW.BusinessAccessLayer\bin\Debug\AW.DataAccessLayer.pdb
+C:\Users\rakesh\biproject\BISummer2015-P1-T2\AW\AW.Model\AW.BusinessAccessLayer\bin\Debug\AW.Model.pdb
+C:\Users\rakesh\biproject\BISummer2015-P1-T2\AW\AW.Model\AW.BusinessAccessLayer\obj\Debug\AW.BusinessAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\rakesh\biproject\BISummer2015-P1-T2\AW\AW.Model\AW.BusinessAccessLayer\obj\Debug\AW.BusinessAccessLayer.dll
+C:\Users\rakesh\biproject\BISummer2015-P1-T2\AW\AW.Model\AW.BusinessAccessLayer\obj\Debug\AW.BusinessAccessLayer.pdb

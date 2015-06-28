@@ -7,12 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace AW.Portal
 {
-    public partial class AW : System.Web.UI.MasterPage
+    public partial class Login : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-       
     }
 }
