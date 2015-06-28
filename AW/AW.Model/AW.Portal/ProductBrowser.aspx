@@ -8,14 +8,20 @@
 
 
 
+
+
+
+
+
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
   <div id="dialog" style="display: none">
-      <uc1:ProductDescription runat="server" ID="ProductDescription" />
+      
 </div>
-    
+    <uc1:ProductDescription runat="server" id="ProductDescri" />
    
     <table>
         <tr>

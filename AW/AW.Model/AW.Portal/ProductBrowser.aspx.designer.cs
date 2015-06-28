@@ -13,13 +13,13 @@ namespace AW.Portal {
     public partial class ProductBrowser {
         
         /// <summary>
-        /// ProductDescription control.
+        /// ProductDescri control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::AW.Portal.UserControls.ProductDescription ProductDescription;
+        protected global::AW.Portal.UserControls.ProductDescription ProductDescri;
         
         /// <summary>
         /// lbl_ModelName control.

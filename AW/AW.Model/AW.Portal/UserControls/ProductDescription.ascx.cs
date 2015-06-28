@@ -15,6 +15,7 @@ namespace AW.Portal.UserControls
         }
         public ProductDescription(int ProductDescriptionId)
         {
+            int id = ProductDescriptionId;
 
         }
     }

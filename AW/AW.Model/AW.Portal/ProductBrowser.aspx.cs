@@ -78,7 +78,7 @@ namespace AW.Portal
             int id = Convert.ToInt32(row.Cells[1].Text);
             lbltest.Text = "selected :" + id.ToString();
            // ProductDescription.ProductDescriptionabc(10);
-            this.ProductDescription.ProductDescription(10);
+          // this.ProductDescri.
             string message = "selected :" + id.ToString();
             ClientScript.RegisterStartupScript(this.GetType(), "Popup", "ShowPopup('" + message + "');", true);
           
