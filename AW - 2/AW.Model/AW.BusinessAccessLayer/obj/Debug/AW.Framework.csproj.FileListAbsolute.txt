@@ -1,0 +1,5 @@
+G:\Bell Info Training\Class Project\AW.Model\AW.BusinessAccessLayer\bin\Debug\AW.BusinessAccessLayer.dll
+G:\Bell Info Training\Class Project\AW.Model\AW.BusinessAccessLayer\bin\Debug\AW.BusinessAccessLayer.pdb
+G:\Bell Info Training\Class Project\AW.Model\AW.BusinessAccessLayer\obj\Debug\AW.Framework.csprojResolveAssemblyReference.cache
+G:\Bell Info Training\Class Project\AW.Model\AW.BusinessAccessLayer\obj\Debug\AW.BusinessAccessLayer.dll
+G:\Bell Info Training\Class Project\AW.Model\AW.BusinessAccessLayer\obj\Debug\AW.BusinessAccessLayer.pdb
