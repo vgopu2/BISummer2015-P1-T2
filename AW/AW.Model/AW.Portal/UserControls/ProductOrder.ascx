@@ -62,12 +62,17 @@
     <td></td>
      <td>
 
-         <asp:Button ID="AddtoCart" runat="server" Text="Button" OnClick="AddtoCart_Click" />
+         <asp:Button ID="AddtoCart" runat="server" Text="AddtoCart" OnClick="AddtoCart_Click"  />
           
      </td>
   </tr>
 
     </table>
+
+<%--Cost Name : <asp:TextBox ID="TxtDescription" runat="server"></asp:TextBox>
+<asp:Button ID="BtnSubmit" runat="server" OnClick="BtnSubmit_Click" Text="Submit" />--%>
+
+
     <script>
         $("#ContentPlaceHolder1_ProductOrderPage_Quantity").change(function () {
           

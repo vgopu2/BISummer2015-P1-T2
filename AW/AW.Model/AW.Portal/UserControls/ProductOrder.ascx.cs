@@ -51,10 +51,10 @@ namespace AW.Portal.UserControls
             if (cartItems.TryGetValue(abcid, out Sqty))
             {
 
-                cartItems.Remove(abcid);
+               // cartItems.Remove(abcid);
 
-                Sqty = Sqty + qty;
-                cartItems.Add(abcid, Sqty);
+                //Sqty = Sqty + qty;
+                cartItems[abcid]  += ( Sqty);
             }
             else
             {
@@ -64,7 +64,10 @@ namespace AW.Portal.UserControls
             Session["ShoppingCart"] = cartItems;
             Response.Redirect("ProductBrowser.aspx");
         }
+        //protected void BtnSubmit_Click(object sender, EventArgs e)
+        //{
 
+        //}
        
 
        

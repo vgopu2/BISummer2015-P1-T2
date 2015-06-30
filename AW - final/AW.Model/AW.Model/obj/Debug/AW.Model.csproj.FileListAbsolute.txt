@@ -1,0 +1,9 @@
+G:\Bell Info Training\Class Project\AW.Model\AW.Model\bin\Debug\AW.Model.dll
+G:\Bell Info Training\Class Project\AW.Model\AW.Model\bin\Debug\AW.Model.pdb
+G:\Bell Info Training\Class Project\AW.Model\AW.Model\obj\Debug\AW.Model.dll
+G:\Bell Info Training\Class Project\AW.Model\AW.Model\obj\Debug\AW.Model.pdb
+C:\Users\rakesh\biproject\BISummer2015-P1-T2\AW\AW.Model\AW.Model\bin\Debug\AW.Model.dll
+C:\Users\rakesh\biproject\BISummer2015-P1-T2\AW\AW.Model\AW.Model\bin\Debug\AW.Model.pdb
+C:\Users\rakesh\biproject\BISummer2015-P1-T2\AW\AW.Model\AW.Model\obj\Debug\AW.Model.csprojResolveAssemblyReference.cache
+C:\Users\rakesh\biproject\BISummer2015-P1-T2\AW\AW.Model\AW.Model\obj\Debug\AW.Model.dll
+C:\Users\rakesh\biproject\BISummer2015-P1-T2\AW\AW.Model\AW.Model\obj\Debug\AW.Model.pdb

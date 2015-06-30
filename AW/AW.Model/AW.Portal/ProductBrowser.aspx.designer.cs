@@ -22,13 +22,13 @@ namespace AW.Portal {
         protected global::AW.Portal.UserControls.ProductDescription ProductDescri;
         
         /// <summary>
-        /// div_ProductOrder control.
+        /// dialogspo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl div_ProductOrder;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl dialogspo;
         
         /// <summary>
         /// ProductOrderPage control.
@@ -38,6 +38,15 @@ namespace AW.Portal {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::AW.Portal.UserControls.ProductOrder ProductOrderPage;
+        
+        /// <summary>
+        /// div_ProductOrder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl div_ProductOrder;
         
         /// <summary>
         /// div_ProductBrowser control.

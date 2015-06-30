@@ -17,17 +17,54 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">
+        function ShowPopup() {
+            $(function () {
+                $("#dialog").dialog({
+                    title: "Product Description",
+                    buttons: {
+                        Close: function () {
+                            $(this).dialog('close');
+                        }
+                    },
+                    modal: true
+                });
+            });
+        };
+        function ShowProductOrder() {
+            $(function () {
+                $("#<%= dialogspo.ClientID %>").dialog({
+                    title: "Product Order Wizard",
+                    width: 900, height: 600,
+                    buttons: {
+                       // ok : function (){ $("#<%= ProductOrderPage.ClientID %>_AddtoCart").click();},
+                        Close: function () {
+                            $(this).dialog('close');
+                        }
+                    },
+                    modal: true,
+                    open: function (type, data) { $(this).parent().appendTo("form"); },
+                    close: function (type, data) { ($(this).parent().replaceWith("")); }
+                });
+            });
+        };
+
+
+
+
+
+</script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div id="dialog" style="display: none">
         <uc1:ProductDescription runat="server" ID="ProductDescri" />
     </div>
-     <div id="dialogspo" style="display: none">
-            <%--<uc1:ProductOrder runat="server" id="ProductOrderPage" />--%>
+     <div id="dialogspo" style="display: none" runat="server">
+            <uc1:ProductOrder runat="server" id="ProductOrderPage" />
         </div>
     <div id="div_ProductOrder" runat="server" >
-         <uc1:ProductOrder runat="server" id="ProductOrderPage" />
+        <%-- <uc1:ProductOrder runat="server" id="ProductOrderPage" />--%>
 
         
         
@@ -35,6 +72,7 @@
     
     </div>
 <div id="div_ProductBrowser" runat="server" >
+    <a href="Checkout.aspx">Cart Page</a>
     <table>
         <tr>
             <td style="vertical-align: top">

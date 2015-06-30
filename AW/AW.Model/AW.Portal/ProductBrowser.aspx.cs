@@ -19,6 +19,7 @@ namespace AW.Portal
         {
 
             if (Session["customerid"] == null)
+                Response.Redirect("Login.aspx");
                
 
 
@@ -33,6 +34,8 @@ namespace AW.Portal
 
                 gv_Product.DataSource = product;
                 gv_Product.DataBind();
+
+              
             }
         }
 
@@ -90,9 +93,9 @@ namespace AW.Portal
                          
                     int rowindex = Convert.ToInt32(e.CommandArgument);
                     ProductOrderPage.GetDesc(rowindex);
-                   // ClientScript.RegisterStartupScript(this.GetType(), "Popup", "ShowProductOrder();", true);
-                    div_ProductOrder.Visible = true;
-                    div_ProductBrowser.Visible = false;
+                    ClientScript.RegisterStartupScript(this.GetType(), "Popup", "ShowProductOrder();", true);
+                   // div_ProductOrder.Visible = true;
+                    //div_ProductBrowser.Visible = false;
             
             }
             else if (e.CommandName == "Select")
