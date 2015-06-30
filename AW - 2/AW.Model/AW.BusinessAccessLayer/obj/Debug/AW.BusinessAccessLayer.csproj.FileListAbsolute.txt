@@ -16,3 +16,12 @@ C:\Users\rakesh\biproject\BISummer2015-P1-T2\AW\AW.Model\AW.BusinessAccessLayer\
 C:\Users\rakesh\biproject\BISummer2015-P1-T2\AW\AW.Model\AW.BusinessAccessLayer\obj\Debug\AW.BusinessAccessLayer.csprojResolveAssemblyReference.cache
 C:\Users\rakesh\biproject\BISummer2015-P1-T2\AW\AW.Model\AW.BusinessAccessLayer\obj\Debug\AW.BusinessAccessLayer.dll
 C:\Users\rakesh\biproject\BISummer2015-P1-T2\AW\AW.Model\AW.BusinessAccessLayer\obj\Debug\AW.BusinessAccessLayer.pdb
+C:\Sandbox\BISummer2015-P1-T2\AW - 2\AW.Model\AW.BusinessAccessLayer\bin\Debug\AW.BusinessAccessLayer.dll
+C:\Sandbox\BISummer2015-P1-T2\AW - 2\AW.Model\AW.BusinessAccessLayer\bin\Debug\AW.BusinessAccessLayer.pdb
+C:\Sandbox\BISummer2015-P1-T2\AW - 2\AW.Model\AW.BusinessAccessLayer\bin\Debug\AW.DataAccessLayer.dll
+C:\Sandbox\BISummer2015-P1-T2\AW - 2\AW.Model\AW.BusinessAccessLayer\bin\Debug\AW.Model.dll
+C:\Sandbox\BISummer2015-P1-T2\AW - 2\AW.Model\AW.BusinessAccessLayer\bin\Debug\AW.DataAccessLayer.pdb
+C:\Sandbox\BISummer2015-P1-T2\AW - 2\AW.Model\AW.BusinessAccessLayer\bin\Debug\AW.Model.pdb
+C:\Sandbox\BISummer2015-P1-T2\AW - 2\AW.Model\AW.BusinessAccessLayer\obj\Debug\AW.BusinessAccessLayer.csprojResolveAssemblyReference.cache
+C:\Sandbox\BISummer2015-P1-T2\AW - 2\AW.Model\AW.BusinessAccessLayer\obj\Debug\AW.BusinessAccessLayer.dll
+C:\Sandbox\BISummer2015-P1-T2\AW - 2\AW.Model\AW.BusinessAccessLayer\obj\Debug\AW.BusinessAccessLayer.pdb

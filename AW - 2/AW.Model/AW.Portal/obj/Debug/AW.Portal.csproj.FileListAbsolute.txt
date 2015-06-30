@@ -20,3 +20,14 @@ C:\Users\rakesh\biproject\BISummer2015-P1-T2\AW\AW.Model\AW.Portal\bin\AW.Model.
 C:\Users\rakesh\biproject\BISummer2015-P1-T2\AW\AW.Model\AW.Portal\obj\Debug\AW.Portal.csprojResolveAssemblyReference.cache
 C:\Users\rakesh\biproject\BISummer2015-P1-T2\AW\AW.Model\AW.Portal\obj\Debug\AW.Portal.dll
 C:\Users\rakesh\biproject\BISummer2015-P1-T2\AW\AW.Model\AW.Portal\obj\Debug\AW.Portal.pdb
+C:\Sandbox\BISummer2015-P1-T2\AW - 2\AW.Model\AW.Portal\bin\AW.Portal.dll
+C:\Sandbox\BISummer2015-P1-T2\AW - 2\AW.Model\AW.Portal\bin\AW.Portal.pdb
+C:\Sandbox\BISummer2015-P1-T2\AW - 2\AW.Model\AW.Portal\bin\AW.BusinessAccessLayer.dll
+C:\Sandbox\BISummer2015-P1-T2\AW - 2\AW.Model\AW.Portal\bin\AW.DataAccessLayer.dll
+C:\Sandbox\BISummer2015-P1-T2\AW - 2\AW.Model\AW.Portal\bin\AW.Model.dll
+C:\Sandbox\BISummer2015-P1-T2\AW - 2\AW.Model\AW.Portal\bin\AW.BusinessAccessLayer.pdb
+C:\Sandbox\BISummer2015-P1-T2\AW - 2\AW.Model\AW.Portal\bin\AW.DataAccessLayer.pdb
+C:\Sandbox\BISummer2015-P1-T2\AW - 2\AW.Model\AW.Portal\bin\AW.Model.pdb
+C:\Sandbox\BISummer2015-P1-T2\AW - 2\AW.Model\AW.Portal\obj\Debug\AW.Portal.csprojResolveAssemblyReference.cache
+C:\Sandbox\BISummer2015-P1-T2\AW - 2\AW.Model\AW.Portal\obj\Debug\AW.Portal.dll
+C:\Sandbox\BISummer2015-P1-T2\AW - 2\AW.Model\AW.Portal\obj\Debug\AW.Portal.pdb

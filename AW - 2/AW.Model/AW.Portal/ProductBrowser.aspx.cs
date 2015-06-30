@@ -13,20 +13,25 @@ namespace AW.Portal
 {
     public partial class ProductBrowser : System.Web.UI.Page
     {
-        
+
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!Page.IsPostBack)
+            {
+                EntityManager<Product> mgrProduct = new EntityManager<Product>();
+                List<Product> product = mgrProduct.GetAll();
 
-          
-         
-              
-            EntityManager<Product> mgrProduct = new EntityManager<Product>();
-            List<Product> product = mgrProduct.GetAll();
-
-            gv_Product.DataSource = product;
-            gv_Product.DataBind();
-
+                gv_Product.DataSource = product;
+                gv_Product.DataBind();
+            }
+            else
+            {
+                //if (hdnOrderPopupVisibleYN.Value == "Y")
+                //{
+                //    ClientScript.RegisterStartupScript(this.GetType(), "Popup", "ShowPopup1();", true);
+                //}
+            }
         }
 
         protected void btn_Search_Click(object sender, EventArgs e)
@@ -57,16 +62,16 @@ namespace AW.Portal
             Product product = new Product();
 
 
-           // product.ProductModelID = tempProModID;
-           //product.ProductCategoryID = tempProdCatID;
-           // if(txt_ProductName.Text != null)
-           //product.Name = txt_ProductName.Text.ToString();
+            // product.ProductModelID = tempProModID;
+            //product.ProductCategoryID = tempProdCatID;
+            // if(txt_ProductName.Text != null)
+            //product.Name = txt_ProductName.Text.ToString();
             if (txt_ModelName.Text != "")
-            product.ProductModelID = tempProModID;// 127;
+                product.ProductModelID = tempProModID;// 127;
             if (txt_Category.Text != "")
                 product.ProductCategoryID = tempProdCatID;
             if (txt_ProductName.Text != "")
-            product.Name = txt_ProductName.Text.ToString();// "Rear Derailleur";
+                product.Name = txt_ProductName.Text.ToString();// "Rear Derailleur";
 
             List<Product> productlist = mgrProduct.Search(product);
 
@@ -76,20 +81,28 @@ namespace AW.Portal
 
         }
 
-        protected void gv_Product_SelectedIndexChanging(object sender, GridViewSelectEventArgs e)
+        protected void gv_Product_RowCommand(object sender, GridViewCommandEventArgs e)
         {
-            GridViewRow row = gv_Product.Rows[e.NewSelectedIndex];
-            int id = Convert.ToInt32(row.Cells[1].Text);
-            //lbltest.Text = "selected :" + id.ToString();
-           // ProductDescription.ProductDescriptionabc(10);
-          // this.ProductDescri.
-            ProductDescri.GetDesc(id);
-           // string message = "selected :" + id.ToString();
-            ClientScript.RegisterStartupScript(this.GetType(), "Popup", "ShowPopup();", true);
-          
+
+
+            if (e.CommandName == "select")
+            {
+                int id = Convert.ToInt32(e.CommandArgument);
+                ucProductDescri.GetDesc(id);
+                ClientScript.RegisterStartupScript(this.GetType(), "Popup", "ShowPopup();", true);
+
+            }  
+
+            else if (e.CommandName == "order")
+            {
+                int id = Convert.ToInt32(e.CommandArgument);
+                ucProductOrder.GetDescOrder(id);
+                //hdnOrderPopupVisibleYN.Value = "Y";
+                ClientScript.RegisterStartupScript(this.GetType(), "Popup", "ShowPopup1();", true);
+            }
         }
-       
-       
-       
+
+
+
     }
 }

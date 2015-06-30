@@ -1,28 +1,63 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AW.Master" AutoEventWireup="true" CodeBehind="ProductBrowser.aspx.cs" Inherits="AW.Portal.ProductBrowser" %>
 
 <%@ Register Src="~/UserControls/ProductDescription.ascx" TagPrefix="uc1" TagName="ProductDescription" %>
-
-
-
-
-
-
-
-
-
-
-
-
+<%@ Register Src="~/UserControls/ProductOrder.ascx" TagPrefix="uc1" TagName="ProductOrder" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+<script type="text/javascript">
+    function ShowPopup() {
+        $(function () {
+            $("#selectDialog").dialog({
+                title: "Product Description", height: 600, width: 600,
+                buttons: {
+                    Close: function () {
+                        $(this).dialog('close');
+                    }
+                },
+                modal: true
+            });
+        });
+    };
+
+    function ShowPopup1() {
+        $(function () {
+            $("#<%= orderDialog.ClientID %>").dialog({
+                title: "Product Order", height: 600, width: 600,
+                buttons: {
+                    Close: function () {
+                        $(this).dialog('close');
+                    }
+                },
+                modal: true
+            });
+        });
+    };
+
+    $(function() {
+        var ddlQty = '#<%= ucProductOrder.ClientID + "_" %>ddlquantity';
+        var txtTotal = '#<%= ucProductOrder.ClientID + "_" %>txtTotalPrice';
+        var txtListPrice = '#<%= ucProductOrder.ClientID + "_" %>lbl_listprice';
+        $(ddlQty).change(
+            function () {
+                alert($(txtListPrice).html());
+                $(txtTotal).val(($(ddlQty).val()) * ($(txtListPrice).html()));
+
+            })
+    });
+  
+
+</script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     
-  <div id="dialog" style="display: none">
-        <uc1:ProductDescription runat="server" id="ProductDescri" />
-</div>
- 
-   
+    <asp:HiddenField ID="hdnOrderPopupVisibleYN" Value="N" runat="server" />
+    <div id="selectDialog" style="display: none">
+        <uc1:ProductDescription runat="server" ID="ucProductDescri" />
+    </div>
+    <div id="orderDialog" style="display: none"  runat="server">
+        <uc1:ProductOrder runat="server" ID="ucProductOrder" />
+    </div>
+
     <table>
         <tr>
             <td style="vertical-align: top">
@@ -41,8 +76,15 @@
         </tr>
         <tr>
             <td style="vertical-align: top">
-                <asp:GridView ID="gv_Product" runat="server" AutoGenerateSelectButton="True" OnSelectedIndexChanging="gv_Product_SelectedIndexChanging">
-
+                <asp:GridView ID="gv_Product" runat="server" OnRowCommand="gv_Product_RowCommand">
+                    <Columns>
+                        <asp:TemplateField>
+                            <ItemTemplate>
+                                <asp:LinkButton ID="btn_select" runat="server" CommandName="select" Text="Select" CommandArgument='<%# Eval("ProductID") %>' />
+                                <asp:LinkButton ID="btn_order" runat="server" CommandName="order" Text="Order" CommandArgument='<%# Eval("ProductID") %>' />
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                    </Columns>
                 </asp:GridView>
             </td>
         </tr>
