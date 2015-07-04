@@ -1,0 +1,14 @@
+G:\Bell Info Training\Class Project\AW.Model\AW.DataAccessLayer\obj\Debug\AW.DataAccessLayer.csprojResolveAssemblyReference.cache
+G:\Bell Info Training\Class Project\AW.Model\AW.DataAccessLayer\bin\Debug\AW.DataAccessLayer.dll
+G:\Bell Info Training\Class Project\AW.Model\AW.DataAccessLayer\bin\Debug\AW.DataAccessLayer.pdb
+G:\Bell Info Training\Class Project\AW.Model\AW.DataAccessLayer\bin\Debug\AW.Model.dll
+G:\Bell Info Training\Class Project\AW.Model\AW.DataAccessLayer\bin\Debug\AW.Model.pdb
+G:\Bell Info Training\Class Project\AW.Model\AW.DataAccessLayer\obj\Debug\AW.DataAccessLayer.dll
+G:\Bell Info Training\Class Project\AW.Model\AW.DataAccessLayer\obj\Debug\AW.DataAccessLayer.pdb
+C:\Users\rakesh\biproject\BISummer2015-P1-T2\AW\AW.Model\AW.DataAccessLayer\bin\Debug\AW.DataAccessLayer.dll
+C:\Users\rakesh\biproject\BISummer2015-P1-T2\AW\AW.Model\AW.DataAccessLayer\bin\Debug\AW.DataAccessLayer.pdb
+C:\Users\rakesh\biproject\BISummer2015-P1-T2\AW\AW.Model\AW.DataAccessLayer\bin\Debug\AW.Model.dll
+C:\Users\rakesh\biproject\BISummer2015-P1-T2\AW\AW.Model\AW.DataAccessLayer\bin\Debug\AW.Model.pdb
+C:\Users\rakesh\biproject\BISummer2015-P1-T2\AW\AW.Model\AW.DataAccessLayer\obj\Debug\AW.DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\rakesh\biproject\BISummer2015-P1-T2\AW\AW.Model\AW.DataAccessLayer\obj\Debug\AW.DataAccessLayer.dll
+C:\Users\rakesh\biproject\BISummer2015-P1-T2\AW\AW.Model\AW.DataAccessLayer\obj\Debug\AW.DataAccessLayer.pdb

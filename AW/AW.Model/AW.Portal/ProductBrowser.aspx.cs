@@ -104,7 +104,7 @@ namespace AW.Portal
 
             //gv_Product.DataSource = productlist;
             //gv_Product.DataBind();
-               DataList1.DataSource = product;
+            DataList1.DataSource = productlist;
                DataList1.DataBind();
 
 

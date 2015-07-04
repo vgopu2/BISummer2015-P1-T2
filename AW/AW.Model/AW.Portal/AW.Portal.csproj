@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Checkout.aspx" />
+    <Content Include="Details.asmx" />
     <Content Include="Login.aspx" />
     <Content Include="MyOrders.aspx" />
     <Content Include="ProductBrowser.aspx" />
@@ -72,7 +73,9 @@
     <Content Include="UserControls\SiteMenu.ascx" />
     <Content Include="UserControls\UCAddressEdit.ascx" />
     <Content Include="UserControls\UCAddressView.ascx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AW.Master.cs">
@@ -88,6 +91,10 @@
     </Compile>
     <Compile Include="Checkout.aspx.designer.cs">
       <DependentUpon>Checkout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Details.asmx.cs">
+      <DependentUpon>Details.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

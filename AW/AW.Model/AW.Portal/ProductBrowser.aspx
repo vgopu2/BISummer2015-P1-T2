@@ -7,15 +7,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script type="text/javascript">
         function ShowPopup() {
@@ -50,8 +41,72 @@
         };
 
 
+        $(function () {
+
+            $('#<%= txt_ModelName.ClientID %>').autocomplete({
+                source: function (request, response) {
+                $.ajax({
+                    url: "Details.asmx/GetModelName",
+                    data: "{ 'ModelName': '" + request.term + "' }",
+                    type: "POST",
+                    dataType: "json",
+                    contentType: "application/json;charset=utf-8",
+                    success: function (data) {
+                        response(data.d);
+                    },
+                    error: function (result) {
+                        alert('There is a problem processing your request');
+                    }
+                });
+                },
+                minLength: 0
+            });
+        });
 
 
+        $(function () {
+
+            $('#<%= txt_Category.ClientID %>').autocomplete({
+                source: function (request, response) {
+                    $.ajax({
+                        url: "Details.asmx/GetCategoryName",
+                        data: "{ 'CategoryName': '" + request.term + "' }",
+                        type: "POST",
+                        dataType: "json",
+                        contentType: "application/json;charset=utf-8",
+                        success: function (data) {
+                            response(data.d);
+                        },
+                        error: function (result) {
+                            alert('There is a problem processing your request');
+                        }
+                    });
+                },
+                minLength: 0
+            });
+        });
+
+        $(function () {
+
+            $('#<%= txt_ProductName.ClientID %>').autocomplete({
+                 source: function (request, response) {
+                     $.ajax({
+                         url: "Details.asmx/GetProductName",
+                         data: "{ 'ProductName': '" + request.term + "' }",
+                         type: "POST",
+                         dataType: "json",
+                         contentType: "application/json;charset=utf-8",
+                         success: function (data) {
+                             response(data.d);
+                         },
+                         error: function (result) {
+                             alert('There is a problem processing your request');
+                         }
+                     });
+                 },
+                 minLength: 0
+             });
+         });
 
 </script>
 </asp:Content>
