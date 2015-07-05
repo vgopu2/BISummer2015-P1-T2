@@ -124,6 +124,7 @@ namespace AW.Portal
             }
             cartItems2.Clear();
             Session["ShoppingCart"] = cartItems2;
+            
 
             Response.Redirect("ProductBrowser.aspx");
        

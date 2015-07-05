@@ -35,6 +35,7 @@ namespace AW.Portal.UserControls
             int prodid1;
             int prodqty1;
             int i = 0;
+            gtotal = 0;
             List<cartitem> abccart = new List<cartitem>();
             foreach (KeyValuePair<int, int> productidQty in cartItems1)
             {
