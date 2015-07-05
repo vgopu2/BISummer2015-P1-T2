@@ -3,6 +3,8 @@
 <%@ Register Src="~/UserControls/SiteMenu.ascx" TagPrefix="uc1" TagName="SiteMenu" %>
 
 
+
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -100,14 +102,20 @@
    <div id="section">
         <div class="container">
         <div class="row">
-        <div class="col-md-1"></div>
+        <div class="col-md-0"></div>
         <div class="col-md-10">
 
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
         </div>
-        <div class="col-md-1"></div>
+        <div class="col-md-2">
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        
+        </asp:ContentPlaceHolder>
+           
+            </div>
       </div>
         </div>
     </div>

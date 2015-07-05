@@ -59,6 +59,7 @@
   <ItemGroup>
     <Content Include="Checkout.aspx" />
     <Content Include="Details.asmx" />
+    <Content Include="Home.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="MyOrders.aspx" />
     <Content Include="ProductBrowser.aspx" />
@@ -67,6 +68,7 @@
     <Content Include="Scripts\jquery-effects-1.8.4.0.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.custom.min.js" />
     <Content Include="Test.aspx" />
+    <Content Include="UserControls\Cartitems.ascx" />
     <Content Include="UserControls\ProductDescription.ascx" />
     <Content Include="UserControls\ProductOrder.ascx" />
     <Content Include="UserControls\ShoppingCart.ascx" />
@@ -96,6 +98,13 @@
       <DependentUpon>Details.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -124,6 +133,13 @@
     </Compile>
     <Compile Include="Test.aspx.designer.cs">
       <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Cartitems.ascx.cs">
+      <DependentUpon>Cartitems.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Cartitems.ascx.designer.cs">
+      <DependentUpon>Cartitems.ascx</DependentUpon>
     </Compile>
     <Compile Include="UserControls\ProductDescription.ascx.cs">
       <DependentUpon>ProductDescription.ascx</DependentUpon>

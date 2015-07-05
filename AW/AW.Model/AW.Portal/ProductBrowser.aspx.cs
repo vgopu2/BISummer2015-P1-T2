@@ -20,8 +20,10 @@ namespace AW.Portal
 
             if (Session["customerid"] == null)
                 Response.Redirect("Login.aspx");
-               
 
+            Dictionary<int, int> cartItems1 = (Dictionary<int, int>)Session["ShoppingCart"];
+            if (cartItems1.Count == 0)
+                cart.Visible = false;
 
             if (!Page.IsPostBack)
             {

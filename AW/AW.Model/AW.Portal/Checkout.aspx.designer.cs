@@ -13,6 +13,15 @@ namespace AW.Portal {
     public partial class Checkout {
         
         /// <summary>
+        /// cart control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl cart;
+        
+        /// <summary>
         /// ShoppingCrt control.
         /// </summary>
         /// <remarks>
@@ -92,5 +101,14 @@ namespace AW.Portal {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnfinalize;
+        
+        /// <summary>
+        /// cartempty control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl cartempty;
     }
 }

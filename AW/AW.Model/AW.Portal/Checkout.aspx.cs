@@ -17,6 +17,16 @@ namespace AW.Portal
        static int shippingid;
         protected void Page_Load(object sender, EventArgs e)
         {
+            Dictionary<int, int> cartItems1 = (Dictionary<int, int>)Session["ShoppingCart"];
+            if (cartItems1.Count == 0)
+            {
+                cart.Visible = false;
+            }
+            else
+            {
+                cartempty.Visible = false;
+            }
+
             if (!IsPostBack)
             {
                 addressview.Visible = false;

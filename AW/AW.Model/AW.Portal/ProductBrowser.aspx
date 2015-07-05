@@ -2,6 +2,8 @@
 
 <%@ Register Src="~/UserControls/ProductDescription.ascx" TagPrefix="uc1" TagName="ProductDescription" %>
 <%@ Register Src="~/UserControls/ProductOrder.ascx" TagPrefix="uc1" TagName="ProductOrder" %>
+<%@ Register Src="~/UserControls/Cartitems.ascx" TagPrefix="uc1" TagName="Cartitems" %>
+
 
 
 
@@ -209,3 +211,10 @@
     </table>
     </div>
 </asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+    <div id="cart" runat="server" >
+          <uc1:Cartitems runat="server" ID="Cartitems" />
+    </div>
+  
+        </asp:Content>
