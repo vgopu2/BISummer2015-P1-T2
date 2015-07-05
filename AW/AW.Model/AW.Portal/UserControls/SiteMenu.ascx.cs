@@ -11,11 +11,17 @@ namespace AW.Portal.UserControls
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["customerid"] == null)
+            {
+                div_afterlogin.Visible = false;
+
+            }
+            else
+            {
+                div_beforelogin.Visible = false;
+            }
 
         }
-        public void ProductDescription(int ProductDescriptionId)
-        {
-            //return void;
-        }
+        
     }
 }

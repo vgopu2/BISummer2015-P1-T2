@@ -5,6 +5,7 @@
 
      <asp:GridView ID="gv_Product" runat="server" AutoGenerateColumns="false"  >
                    <Columns>
+                       <asp:BoundField DataField="SalesOrderID" HeaderText="SalesOrderID" />
                        <asp:BoundField DataField="Name" HeaderText="Name" />
                         <asp:BoundField DataField="Color" HeaderText="Color" />
                         <asp:BoundField DataField="StandardCost" HeaderText="StandardCost" />

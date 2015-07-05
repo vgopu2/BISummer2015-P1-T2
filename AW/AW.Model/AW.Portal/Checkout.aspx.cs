@@ -9,8 +9,12 @@ using System.Web.UI.WebControls;
 
 namespace AW.Portal
 {
+    
     public partial class Checkout : System.Web.UI.Page
     {
+      //  public static DateTime Today { get; }
+       static int customerid;
+       static int shippingid;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -28,12 +32,13 @@ namespace AW.Portal
         {
             string abc = "";
            // Response.Redirect("Checkout.aspx");
-            int customerid = Convert.ToInt32(Session["customerid"].ToString());
+            customerid = Convert.ToInt32(Session["customerid"].ToString());
 
             EntityManager<ShippingAddress> pcat = new EntityManager<ShippingAddress>();
             ShippingAddress procat = new ShippingAddress();
             procat.CustomerID = customerid;
             List<ShippingAddress> prodcatID = pcat.Search(procat);
+            shippingid = prodcatID[0].AddressID;
             if (prodcatID.Count != 0)
             {
                 abc = prodcatID[0].AddressLine1;
@@ -64,15 +69,39 @@ namespace AW.Portal
         protected void btnfinalize_Click(object sender, EventArgs e)
         {
 
-            Dictionary<int, int> cartItems1 = (Dictionary<int, int>)Session["ShoppingCart"];
-            int prodid1;
-            int prodqty1;
+           
           
            
-            foreach (KeyValuePair<int, int> productidQty in cartItems1)
+
+            EntityManager<SalesOrderHeader> sodr = new EntityManager<SalesOrderHeader>();
+            SalesOrderHeader SalOdr = new SalesOrderHeader();
+            SalOdr.OrderDate = DateTime.Today;
+            SalOdr.DueDate = DateTime.Today.AddDays(7);
+            SalOdr.ShipDate = DateTime.Today.AddDays(3);
+            SalOdr.Status = 1;
+            SalOdr.CustomerID = customerid;
+            SalOdr.ShipToAddressID = shippingid;
+            SalOdr.BillToAddressID = shippingid;
+            SalOdr.ShipMethod = "CARGO TRANSPORT 5";
+            SalOdr.ModifiedDate = DateTime.Today;
+            //SalOdr.TotalDue = 2123.213M;
+
+            List<SalesOrderHeader> Salorder = sodr.Insert(SalOdr);
+
+            EntityManager<SalesOrderHeader> sodr1 = new EntityManager<SalesOrderHeader>();
+            SalesOrderHeader SalOdr1 = new SalesOrderHeader();
+            SalOdr1.CustomerID = customerid;
+            List<SalesOrderHeader> Salorder1 = sodr1.Search(SalOdr);
+
+        
+            int salesodrid = Salorder1.Max(r => r.SalesOrderID);
+
+            Dictionary<int, int> cartItems2 = (Dictionary<int, int>)Session["ShoppingCart"];
+
+            foreach (KeyValuePair<int, int> productidQty1 in cartItems2)
             {
-                prodid1 = productidQty.Key;
-                prodqty1 = productidQty.Value;
+               int prodid1 = productidQty1.Key;
+               int  prodqty1 = productidQty1.Value;
 
 
                 EntityManager<ProductListing> pcat = new EntityManager<ProductListing>();
@@ -81,17 +110,26 @@ namespace AW.Portal
                 List<ProductListing> prodcatID = pcat.Search(procat);
 
 
-                
+
+                EntityManager<SalesOrderDetail> sodrd = new EntityManager<SalesOrderDetail>();
+                SalesOrderDetail SalOdrd = new SalesOrderDetail();
+                SalOdrd.SalesOrderID = salesodrid;
+                SalOdrd.OrderQty = Convert.ToInt16( prodqty1);
+                SalOdrd.ProductID = prodid1;
+                SalOdrd.UnitPrice = prodcatID[0].ListPrice;
+
+                List<SalesOrderDetail> Salorderd = sodrd.Insert(SalOdrd);
+
+               // cartItems2.Remove(prodid1);
             }
-           
+            cartItems2.Clear();
+            Session["ShoppingCart"] = cartItems2;
 
-           // ShoppingCrt.
-            //EntityManager<ShippingAddress> pcat = new EntityManager<ShippingAddress>();
-            //ShippingAddress procat = new ShippingAddress();
-            //procat.CustomerID = 10;
-            //procat.AddressLine1 = "sdfag";
-
-            //List<ShippingAddress> prodcatID = pcat.Insert(procat);
+            Response.Redirect("ProductBrowser.aspx");
+       
         }
+       
     }
+      
+   
 }

@@ -14,10 +14,12 @@ namespace AW.Portal.UserControls
     {
         DataTable tb = new DataTable();
         DataRow dr;
+        static decimal gtotal=0;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
+                if(Session["ShoppingCart"]!=null)
                 dataload();
 
             }
@@ -45,6 +47,9 @@ namespace AW.Portal.UserControls
                 procat.ProductID = prodid1;
                 List<ProductListing> prodcatID = pcat.Search(procat);
 
+                gtotal = gtotal + prodcatID[0].ListPrice;
+
+
                 cartitem mycart = new cartitem()
                 {
                     ID = prodid1,
@@ -66,6 +71,8 @@ namespace AW.Portal.UserControls
             }
             Gv1.DataSource = abccart;
             Gv1.DataBind();
+            totalAmountLabel.Text = gtotal.ToString();
+
 
         }
         protected void GridView_RowCommand(object sender, GridViewCommandEventArgs e)
@@ -133,6 +140,8 @@ namespace AW.Portal.UserControls
                 statusLabel.Text = success ?
                   "<br />Your shopping cart was successfully updated!<br />" :
                   "<br />Some quantity updates failed! Please verify your cart!<br />";
+               // Dictionary<int, int> cartItems123 = (Dictionary<int, int>)Session["ShoppingCart"];
+
             }
             // Repopulate the control
            // PopulateControls();

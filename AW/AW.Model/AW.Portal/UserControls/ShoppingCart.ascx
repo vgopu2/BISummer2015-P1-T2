@@ -31,6 +31,8 @@
                         
                     </Columns>
    </asp:gridview>
+<br /> Total amount: <asp:Label ID="totalAmountLabel" runat="server" Text="Label" />
+<br />
 <asp:Button ID="UpdateCart" runat="server" Text="Update Cart" OnClick="UpdateCart_Click" />
 <asp:Label ID="statusLabel" runat="server" Text=""></asp:Label>
 
